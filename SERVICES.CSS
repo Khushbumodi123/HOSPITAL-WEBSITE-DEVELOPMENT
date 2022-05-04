@@ -1,0 +1,31 @@
+#service{
+    margin-top: 200px;
+}
+/* .health_checkup{ 
+
+}  */
+
+.health_checkup{
+    height: 50px;
+}
+.health_checkup h6{
+    margin-top: 20px;
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.time-table-section{
+    margin-bottom: 100px;
+}
+
+/* .copyright-area wow fadeIn{
+    margin-top: 100px;
+} */
+
+/* 
+.container{
+    display: flex;
+ }  */

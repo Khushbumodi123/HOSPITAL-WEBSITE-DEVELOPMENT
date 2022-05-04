@@ -1,0 +1,96 @@
+#specialitiesdtls{
+ margin-top: 300px;
+ margin-bottom: 200px;
+ margin-left: 170px;
+}
+.speacialitydiv1{
+  display: flex;
+}
+.imgdiv{
+ width: 400px;
+ height: 350px;
+ border: 2px solid slateblue;
+}
+.imgdiv img:hover{
+   width: 405px;
+   height: 355px;
+}
+.theorydiv{
+ width: 400px;
+ height: 200px;
+ border: 2px solid slategray;
+ margin-top: 10px;
+ background-color: rgb(6, 42, 110);
+ /*background: rgb(2,0,36);
+ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,15,198,0.8323529240797882) 0%, rgba(48,55,205,1) 0%, rgba(41,47,204,1) 0%, rgba(63,74,208,0.7567226719789478) 0%, rgba(186,224,232,1) 100%); */   
+}
+.speacialitydiv1{
+  margin-left: 200px;
+}
+
+.theorydiv h1{
+  margin-left: 100px;
+  font-size: 30px;
+  color: white;
+}
+.theorydiv h3{
+ margin-left: 130px;
+ font-size: 17px;
+ color: darkgoldenrod
+}
+.theorydiv p{
+ text-align: center;
+ color: burlywood;
+}
+.specialityone h1{
+  margin-left: 30px;
+}
+.specialitytwo{
+  margin-left: 20px;
+}
+
+.specialitydiv2{
+  margin-top: 20px;
+  display: flex;
+}
+.specialityfour{
+  margin-left: 20px;
+}
+.specialityfour h1{
+  font-size: 25px;
+}
+.specialityfour h1{
+  margin-left: 60px;
+}
+.specialityfour .h1one{
+  margin-left: 90px;
+}
+.specialityfive{
+  margin-left: 20px;
+}
+.specialitysix{
+  /* margin-left: 20px; */
+}
+.specialitydiv3{
+  display: flex;
+  margin-top: 20px;
+}
+.specialityseven{
+  margin-left: 20px;
+}
+.specialityeight{
+  margin-left: 20px;
+}
+.specialitynine{
+  /* margin-left: 20px; */
+}
+.specialitydiv4{
+  display: flex;
+  margin-top: 20px;
+}
+.specialityten{
+  margin-left: 20px;
+}
+.specialityeleven{
+  margin-left: 20px;
+}

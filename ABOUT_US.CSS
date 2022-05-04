@@ -1,0 +1,164 @@
+/* *{
+  position: relative;
+} */
+
+#heading_first{
+    margin-top: 250px;
+}
+#h1_tag{
+    text-align: center;
+    font-family: fantasy;
+    letter-spacing: 1px;
+    font-size: 50px;
+}
+
+#heading_second{
+  margin-top: 90px;
+  margin-bottom: 40px;
+}
+#INFRASTRUCTURE{
+  text-align: center;
+    font-family: fantasy;
+    letter-spacing: 1px;
+    font-size: 50px;
+}
+
+
+/* home/reasons 
+================================= */
+
+
+.reasons-col {
+  position: relative;
+  overflow: hidden;
+}
+.reasons-col img {
+  width: 90%;
+  -moz-transition: all, 0.5s;
+  -o-transition: all, 0.5s;
+  -webkit-transition: all, 0.5s;
+  transition: all, 0.5s;
+}
+.reasons-col .reasons-titles {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background: rgba(31, 118, 189, 0.8);
+  width: 90%;
+  color: #fff;
+  text-transform: uppercase;
+  height: 60px;
+  /* padding: 25px 0; */
+}
+.reasons-col .reasons-title {
+  font-weight: bold;
+}
+.reasons-col .on-hover {
+  position: absolute;
+  top: 0;
+  bottom: 60px;
+  width: 90%;
+  padding: 15px;
+  color: #fff;
+  text-align: justify;
+  background: rgba(31, 118, 189, 0.9);
+  border-bottom: 1px solid #fff;
+  visibility: hidden;
+  opacity: 0;
+  -moz-transition: all, 0.5s;
+  -o-transition: all, 0.5s;
+  -webkit-transition: all, 0.5s;
+  transition: all, 0.5s;
+}
+.reasons-col:hover .on-hover {
+  visibility: visible;
+  opacity: 1;
+  /* padding: 50px; */
+  -moz-transition: all, 1s;
+  -o-transition: all, 1s;
+  -webkit-transition: all, 1s;
+  transition: all, 1s;
+}
+.reasons-col:hover img {
+  -moz-transform: perspective(1.1) scale3d(1.1, 1.1, 1.1);
+  -webkit-transform: perspective(1.1) scale3d(1.1, 1.1, 1.1);
+  transform: perspective(1.1) scale3d(1.1, 1.1, 1.1);
+}
+
+.col-md-6{
+    margin-top: 20px;
+}
+
+.row{
+  display: flex;
+}
+
+
+
+/* home/causes
+================================= */
+
+
+/* ===========layout.css============= */
+
+.elements-three li{margin-bottom:30px;}
+.elements-three li:nth-child(3n+1){margin-left:0; clear:left;}
+.elements article{display:block; position:relative; padding:30px 15px; border:1px solid;}
+.elements article *{margin:0; padding:0; line-height:1;}
+.elements article i{width:60px; height:60px; line-height:60px; font-size:2rem; text-align:center;}
+.elements article p{line-height:1.4rem;}
+
+
+/* Introblocks */
+#introblocks{display:block; position:relative; margin-top:-150px; z-index:1;}/* 150px => 70px + container padding */
+#introblocks .elements article{min-height:122px;/* padding + border + icon */ padding-left:90px;}
+#introblocks .elements article .heading{margin-bottom:15px;}
+#introblocks .elements article footer{position:absolute; top:35px; left:15px;}
+
+
+/* Add roundness to certain items
+Settings are all different due to the optical similarity needed for different sized elements
+Delete this section if roundness is not wanted / required
+--------------------------------------------------------------------------------------------------------------- */
+.elements article{border-radius:22px;}
+.elements article i{border-radius:12px;}
+
+
+/* Transition Fade
+This gives a smooth transition to "ALL" elements used in the layout - other than the navigation form used in mobile devices
+If you don't want it to fade all elements, you have to list the ones you want to be faded individually
+Delete it completely to stop fading
+--------------------------------------------------------------------------------------------------------------- */
+*, *::before, *::after{transition:all .3s ease-in-out;}
+
+
+
+/* Content Area */
+.elements article, .elements article:hover{color:#474747; background-color:#FFFFFF; border-color:#D7D7D7;}
+.elements article:hover, #services .elements article:hover{border-color:rgba(31, 118, 189, 0.8);}
+.elements article a i{color:rgba(31, 118, 189, 0.8); background-color:#F4F4F4;}
+.elements article:hover a i, #introblocks .elements li:nth-child(even) article:hover a i{color:#FFFFFF; background-color:rgba(31, 118, 189, 0.8);}
+#introblocks .elements article:hover{box-shadow:0px 0px 15px rgba(0,0,0,.1);}
+#introblocks .elements li:nth-child(even) article{background-color:#F4F4F4;}
+#introblocks .elements li:nth-child(even) article a i{background-color:#FFFFFF;}
+#services .elements article{color:#FFFFFF; background-color:rgba(255,255,255,.2); border-color:#000000;}
+#services .elements article > p:last-of-type{border-color:#D7D7D7;}
+
+/* ===================framework.css=========================== */
+/* @charset "utf-8"; */
+
+h1, h2, h3, h4, h5, h6, .heading{font-family:Georgia, "Times New Roman", Times, serif;}
+
+
+
+/* Grid - RS-MQF 1140 V.2 - https://www.os-templates.com/free-basic-html5-templates/rs-mqf-1140
+--------------------------------------------------------------------------------------------------------------- */
+.one_third{display:inline-block; float:left; margin:0 0 0 4.21052%; list-style:none;}
+
+.one_third{width:30.52631%;}
+
+.heading{
+  font-size: 22px;
+  text-align: left;
+  font-weight: bold;
+}
