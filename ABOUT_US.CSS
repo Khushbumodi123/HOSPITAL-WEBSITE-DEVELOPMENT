@@ -43,7 +43,7 @@
   position: absolute;
   bottom: 0;
   text-align: center;
-  background: rgba(31, 118, 189, 0.8);
+  background: rgb(31, 118, 189);
   width: 90%;
   color: #fff;
   text-transform: uppercase;
@@ -61,7 +61,7 @@
   padding: 15px;
   color: #fff;
   text-align: justify;
-  background: rgba(31, 118, 189, 0.9);
+  background: rgb(31, 118, 189);
   border-bottom: 1px solid #fff;
   visibility: hidden;
   opacity: 0;
