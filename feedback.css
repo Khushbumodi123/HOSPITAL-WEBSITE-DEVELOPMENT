@@ -19,8 +19,12 @@
   margin-bottom: 120px;
   margin-left: 500px;
   margin-right: 500px;
-  display: border-box;
+  display: inline-block;
   border: 5px solid #000000;
+}
+.text p{
+  text-align: center;
+  display:contents;
 }
 .post{
     top: 45%;
