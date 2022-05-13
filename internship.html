@@ -98,7 +98,7 @@
     <h1>Internship-Registration-Form</h1>
 
     <div class="intern_form">
-        <form class="form-1" action="#" method="post">
+        <form class="form-1" action="internship.php" method="post">
             <!-- ----------names in html form---------------------- -->
             <div class="names_container_div">
                 <div class="names">
@@ -121,8 +121,11 @@
 
                 <div class="email_contact">
                     <!-- ---------------phone number field------------- -->
-                    <label for="phone">Contact number:</label><br>
-                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+                    <label for="phone">Contact number:</label><br><br>
+                    <input type="tel" id="phone" name="phone" placeholder="Contact number" pattern="[6-9][0-9]{9}"
+                        required><br><br>
+                    <!-- <label for="phone">Contact number:</label><br>
+                    <input type="tel" id="phone" name="phone" pattern="[6-9][0-9]{9}" required><br> -->
                 </div>
             </div>
 
@@ -131,18 +134,18 @@
 
                 <div class="gender">
                     <label>Gender</label><br>
-                    <input type="radio" id="male" name="gender" value="Male">
+                    <input type="radio" id="male" name="gender" value="Male" required>
                     <label for="male"> Male</label>
-                    <input type="radio" id="female" name="gender" value="Female">
+                    <input type="radio" id="female" name="gender" value="Female" required>
                     <label for="female">Female</label>
-                    <input type="radio" id="other" name="gender" value="Other">
+                    <input type="radio" id="other" name="gender" value="Other" required>
                     <label for="other">Other</label>
                 </div>
 
                 <!-- -----------------birth date field--------------- -->
                 <div class="bdate">
                     <label for="birthday">Birthday:</label><br>
-                    <input type="date" id="birthday" name="birthday">
+                    <input type="date" id="birthday" name="birthday" required>
                 </div>
 
             </div>
@@ -151,11 +154,11 @@
             <div class="container_address">
                 <div class="inner_address">
                     <label for="address">Current Address</label><br>
-                    <input type="text" class="address" name="address">
+                    <input type="text" class="address" name="address" value="current" required>
                 </div>
                 <div class="inner_address">
                     <label for="address">Permenent Address</label><br>
-                    <input type="text" class="address" name="address">
+                    <input type="text" class="address" name="address" value="permanent" required>
                 </div>
             </div>
 
@@ -181,7 +184,7 @@
             <!-- ------------submite button-------------- -->
             <div class="container_button">
                 <div class="inner_conatiner_button">
-                    <input type="submit" class="submit_btn">
+                    <input type="submit" class="submit">
                 </div>
             </div>
 

@@ -19,7 +19,7 @@
 <!-- Site CSS -->
 <link rel="stylesheet" href="style.css">
 <!-- FEEDBACK -->
-<link rel="stylesheet" href="feedback.css">
+<!-- <link rel="stylesheet" href="feedback.css"> -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <!-- Colors CSS -->
 <link rel="stylesheet" href="css/colors.css">
@@ -36,20 +36,23 @@
 <!-- font awsome icons -->
 <script src="https://kit.fontawesome.com/e2e0bfab9c.js" crossorigin="anonymous"></script>
 
+<link rel="stylesheet" href="../WEBSITE/feedback2.css">
+
 </head>
 
 <body class="clinic_version">
    <!-- LOADER -->
-   <div id="preloader">
+   <!-- <div id="preloader">
       <img class="preloader" src="images/loaders/heart-loading2.gif" alt="">
-   </div>
+   </div> -->
    <!-- END LOADER -->
 
 
    <header>
       <div class="header-top wow fadeIn" style="margin-top: 0px; padding-top: 0px;">
          <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="images/Hospital_logo.jpg" alt="Hospital LOGO" height="120px"></a>
+            <!-- <a class="navbar-brand" href="index.html"><img src="images/RUDRA LOGO.png" alt="RUDRA LOGO"
+                  height="100px"></a> -->
             <div class="right-header">
                <div class="header-info">
                   <div class="info-inner">
@@ -94,73 +97,69 @@
       </div>
       </div>
    </header>
-   <div class="feedback_container">
+
+   <div class="feedback_container" style="position: relative ;">
       <div class="post">
          <div class="text">
-            <h1 style="color:#1f9cff;font-size:60px;">FEEDBACK</h1>
+            <h1>FEEDBACK</h1>
             <p>Rate Us!</p>
-         </div> 
+         </div>
       </div>
-      <div class="rating">
-        <input type="radio" name="rate" id="rate-5">
-        <label for="rate-5"></label>
-        <input type="radio" name="rate" id="rate-4">
-        <label for="rate-4"></label>
-        <input type="radio" name="rate" id="rate-3">
-        <label for="rate-3"></label>
-        <input type="radio" name="rate" id="rate-2">
-        <label for="rate-2"></label>
-        <input type="radio" name="rate" id="rate-1">
-        <label for="rate-1"></label>
-      </div>
-      <div class="experience">
-        <form action="#">
-        <div class="textarea">
-        <textarea cols="30" placeholder="Describe your experience.."></textarea>
-        </div>
-        <div class="btn">
-        <button type="submit">Submit</button>
-        </div>
-        </form>
-      </div>
-   </div>
-    <script>
-      const btn = document.querySelector("button");
-      const post = document.querySelector(".post");
-      const widget = document.querySelector(".star-widget");
-      const editBtn = document.querySelector(".edit");
-      btn.onclick = ()=>{
-        widget.style.display = "none";
-        post.style.display = "block";
-        editBtn.onclick = ()=>{
-          widget.style.display = "block";
-          post.style.display = "none";
-        }
-        return false;
-      }
-    </script>
 
-<div class="copyright_area">
-   <div class="socialmedia1" style="float:right; margin-top: 10px; margin-right: 200px;">
-    <!--------- BAR 1 social media icons ---------------------------->
-    <p style="font-size: 14px; color: white;"><b>Follow Us on Social Media -</b>
-     <a href="https://www.facebook.com/profile.php?id=100076818870996"><i class="fab fa-facebook-square fa-2x"></i></a>
-     <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
-     <a href="https://www.linkedin.com/in/rudra-hospital-5a7915226/"><i class="fab fa-linkedin fa-2x"></i></a>
-     <a href="https://www.instagram.com/rudramultihospital/"><i class="fab fa-instagram-square fa-2x"></i></a>
-    </p>
-   </div>
-   <div class="container">
-    <div class="row">
-     <div class="col-md-8">
-      <div class="footer-text">
- 
-       <p style="float: left; margin-top: 20px;"><b>© ALL RIGHTS RESERVED TO RUDRA HOSPITAL</b></p>
+      <div class="rating" style="position: absolute;">
+         <input type="radio" name="star" id="star1">
+         <label for="star1"></label>
+         <input type="radio" name="star" id="star2">
+         <label for="star2"></label>
+         <input type="radio" name="star" id="star3">
+         <label for="star3"></label>
+         <input type="radio" name="star" id="star4">
+         <label for="star4"></label>
+         <input type="radio" name="star" id="star5">
+         <label for="star5"></label>
       </div>
-     </div>
-    </div>
+
+      <div class="experience">
+         <center>
+            <form action="#">
+               <div class="textarea">
+                  <textarea cols="30" placeholder="Describe your experience.."></textarea>
+               </div>
+               <div class="btn">
+                  <button type="submit" onclick="myFunction()">Submit</button>
+               </div>
+            </form>
+         </center>
+      </div>
    </div>
-  </div>
+
+   <script>
+      function myFunction(){
+         alert("Your Feedback Successfully Submited \nThank You...!!!")
+      }
+   </script>
+
+   <div class="copyright_area">
+      <div class="socialmedia1" style="float:right; margin-top: 10px; margin-right: 200px;">
+         <!--------- BAR 1 social media icons ---------------------------->
+         <p style="font-size: 14px; color: white;"><b>Follow Us on Social Media -</b>
+            <a href="https://www.facebook.com/profile.php?id=100076818870996"><i
+                  class="fab fa-facebook-square fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/rudra-hospital-5a7915226/"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://www.instagram.com/rudramultihospital/"><i class="fab fa-instagram-square fa-2x"></i></a>
+         </p>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-8">
+               <div class="footer-text">
+                  <p style="float: left; margin-top: 10px;"><b>© ALL RIGHTS RESERVED TO HOSPITAL</b></p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
    <!-- end copyrights -->
    <a href="index.html" data-scroll class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
    <!-- all js files -->
@@ -168,8 +167,8 @@
    <!-- all plugins -->
    <script src="js/custom.js"></script>
    <!-- map -->
-   <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNUPWkb4Cjd7Wxo-T4uoUldFjoiUA1fJc&callback=myMap"></script>
+   <!-- <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNUPWkb4Cjd7Wxo-T4uoUldFjoiUA1fJc&callback=myMap"></script> -->
 </body>
 
 </html>
