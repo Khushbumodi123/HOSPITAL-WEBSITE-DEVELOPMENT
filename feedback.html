@@ -51,6 +51,7 @@
    <header>
       <div class="header-top wow fadeIn" style="margin-top: 0px; padding-top: 0px;">
          <div class="container">
+            <div class="google_element" id="google_element"></div>
             <!-- <a class="navbar-brand" href="index.html"><img src="images/RUDRA LOGO.png" alt="RUDRA LOGO"
                   height="100px"></a> -->
             <div class="right-header">
@@ -166,6 +167,12 @@
    <script src="js/all.js"></script>
    <!-- all plugins -->
    <script src="js/custom.js"></script>
+   <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+   <script>
+      function loadGoogleTranslate(){
+         new google.translate.TranslateElement("google_element")
+      }
+   </script>
    <!-- map -->
    <!-- <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNUPWkb4Cjd7Wxo-T4uoUldFjoiUA1fJc&callback=myMap"></script> -->

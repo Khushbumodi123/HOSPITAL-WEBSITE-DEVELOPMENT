@@ -6,16 +6,16 @@
  $phone = $_POST['phone'];
  $gender = $_POST['gender'];
  $birthday = $_POST['birthday'];
- $current = $_POST['current'];
- $permanent = $_POST['permanent'];
+ $address1 = $_POST['address1'];
+ $address2 = $_POST['address2'];
  $pincode = $_POST['pincode'];
 
-    if (!empty($f_name) ||  !empty($l_name) || !empty($email) || !empty($phone) || !empty($gender) || !empty($birthday) || !empty($current) || !empty($permanent) || !empty($pincode)){
+    if (!empty($f_name) ||  !empty($l_name) || !empty($email) || !empty($phone) || !empty($gender) || !empty($birthday) || !empty($address1) || !empty($address2) || !empty($pincode)){
        
         $host = "localhost";
         $dbUsername = "root";
         $dbPassword = "";
-        $dbName = "register";
+        $dbName = "internship";
 
         $conn = new mysqli($host, $dbUsername, $dbPassword, $dbName);
 
@@ -23,8 +23,8 @@
             die('Connect Error('. mysqli_connect_errno().')' . mysqli_connect_error());
         }
         else {
-            $Select = "SELECT email FROM register WHERE email = ? LIMIT 1";
-            $Insert = "INSERT INTO register(f_name, l_name, email,phone, gender, birthday,current,permanent,pincode) values(?, ?, ?, ?, ?, ?,?,?)";
+            $Select = "SELECT email FROM internship WHERE email = ? LIMIT 1";
+            $Insert = "INSERT Into internship (f_name, l_name, email,phone, gender, birthday,address1,address2,pincode) values(?, ?, ?, ?, ?, ?,?,?,?)";
 
             $stmt = $conn->prepare($Select);        //Prepares an SQL statement for execution
             $stmt->bind_param("s", $email);         //s is corresponding variable has type string and Binds variables to a prepared statement as parameters
@@ -38,7 +38,7 @@
                 $stmt->close();
 
                 $stmt = $conn->prepare($Insert);
-                $stmt->bind_param("ssssii",$f_name, $l_name, $email,$phone, $gender, $birthday,$current,$permanent,$pincode);
+                $stmt->bind_param("sssisissi",$f_name, $l_name, $email,$phone, $gender, $birthday,$address1,$address2,$pincode);
                 echo "New record inserted sucessfully.";
             }
             else {

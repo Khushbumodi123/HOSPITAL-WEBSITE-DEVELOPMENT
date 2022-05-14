@@ -3,7 +3,7 @@ if (isset($_POST['submit'])) {
     if (isset($_POST['f_name']) && isset($_POST['l_name']) &&
         isset($_POST['email']) && isset($_POST['phone']) &&
         isset($_POST['gender']) && isset($_POST['birthday']) && 
-        isset($_POST['current']) && && isset($_POST['permanent']) && isset($_POST['pincode'])) {
+        isset($_POST['address1']) && isset($_POST['address2']) && isset($_POST['pincode'])) {
         
         $f_name = $_POST['f_name'];
         $l_name = $_POST['l_name'];
@@ -11,8 +11,8 @@ if (isset($_POST['submit'])) {
         $phone = $_POST['phone'];
         $gender = $_POST['gender'];
         $birthday = $_POST['birthday'];
-        $current = $_POST['current'];
-        $permanent = $_POST['permanent'];
+        $address1 = $_POST['address1'];
+        $address2 = $_POST['address2'];
         $pincode = $_POST['pincode'];
 
         $host = "localhost";
@@ -27,7 +27,7 @@ if (isset($_POST['submit'])) {
         }
         else {
             $Select = "SELECT email FROM register WHERE email = ? LIMIT 1";
-            $Insert = "INSERT INTO register($f_name, $l_name, $email,$phone, $gender, $birthday,$current,$permanent,$pincode) values(?, ?, ?, ?, ?, ?,?,?)";
+            $Insert = "INSERT INTO register($f_name, $l_name, $email,$phone, $gender, $birthday,$address1,$address2,$pincode) values(?, ?, ?, ?, ?, ?,?,?,?)";
 
             $stmt = $conn->prepare($Select);        //Prepares an SQL statement for execution
             $stmt->bind_param("s", $email);         //s is corresponding variable has type string and Binds variables to a prepared statement as parameters
@@ -41,7 +41,7 @@ if (isset($_POST['submit'])) {
                 $stmt->close();
 
                 $stmt = $conn->prepare($Insert);
-                $stmt->bind_param("ssssii",$f_name, $l_name, $email,$phone, $gender, $birthday,$current,$permanent,$pincode);
+                $stmt->bind_param("sssisissi",$f_name, $l_name, $email,$phone, $gender, $birthday,$address1,$address2,$pincode);
                 if ($stmt->execute()) {
                     echo "New record inserted sucessfully.";
                 }

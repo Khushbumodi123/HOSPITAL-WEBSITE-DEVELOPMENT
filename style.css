@@ -91,6 +91,13 @@ body.demos .-fluid {
     font-family: 'Times New Roman', Times, serif;
 }
 
+.google_element{
+    margin-left: 95%;
+}
+/* .container select{
+    margin-left: 95%;
+    margin-top: 0%;
+} */
 
 /*-------------------BAR1-----------------------------------*/
 .socialmedia1{
@@ -1842,7 +1849,9 @@ select.mobile-device {
     FOOTER
 -------------------------------------------------------------------*/
 
-
+.col-md-4{
+    margin-left: 40%;
+}
 
 .cac {
     background-color: #232323;
