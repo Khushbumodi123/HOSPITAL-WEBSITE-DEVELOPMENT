@@ -23,8 +23,8 @@
             die('Connect Error('. mysqli_connect_errno().')' . mysqli_connect_error());
         }
         else {
-            $Select = "SELECT email FROM internship WHERE email = ? LIMIT 1";
-            $Insert = "INSERT Into internship (f_name, l_name, email,phone, gender, birthday,address1,address2,pincode) values(?, ?, ?, ?, ?, ?,?,?,?)";
+            $Select = "SELECT email FROM internship_form_data WHERE email = ? LIMIT 1";
+            $Insert = "INSERT Into internship_form_data (f_name, l_name, email,phone, gender, birthday,address1,address2,pincode) values(?, ?, ?, ?, ?, ?,?,?,?)";
 
             $stmt = $conn->prepare($Select);        //Prepares an SQL statement for execution
             $stmt->bind_param("s", $email);         //s is corresponding variable has type string and Binds variables to a prepared statement as parameters
