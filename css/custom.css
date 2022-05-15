@@ -102,7 +102,6 @@ header {
 }
 .right-header {
     float: right;
-	margin:11px 0;
 }
 .header-info {
     float: left;
@@ -1120,12 +1119,13 @@ nav.main-menu .navbar-toggle {
 }
 .header-bottom nav.main-menu ul.nav.navbar-nav > li a {
     color: #fff;
-    font-size: 17px;
+    font-size: 18px;
     padding: 20px 20px;
     text-transform: none;
     letter-spacing: 0;
     font-weight: 500;
-    margin-right: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
 }	
 
 /** mobile **/

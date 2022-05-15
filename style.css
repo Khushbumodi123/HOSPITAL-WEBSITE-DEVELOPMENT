@@ -358,15 +358,15 @@ a img.aligncenter {
 /*------------------------------------------------------------------
     HEADER
 -------------------------------------------------------------------*/
+
 .megamenu .nav,
 .megamenu .collapse,
 .megamenu .dropup,
 .megamenu .dropdown {
     position: static;
 }
-
 .megamenu .container-fluid {
-    position: relative;
+    position: absolute;
 }
 
 .megamenu .dropdown-menu {
@@ -416,7 +416,7 @@ a img.aligncenter {
 }
 
 .right-header{
-    padding: 4%;
+    padding: 1%;
 }
 
 .header_style_01 .navbar-default .navbar-nav > li > a {
@@ -2137,9 +2137,6 @@ select.mobile-device {
     display: block
 }
 
-.preloader {
-
-}
 
 /*------------------------------------------------------------------
     BUTTONS
